@@ -42,11 +42,11 @@ This guideline is intended to remind you of the necessities for going live with 
 
 #### How to run
 
-Run TensorFlow with Jupyter on Docker:
+Run TensorFlow with Jupyter on Docker by replacing "PATH-TO" and running the following command:
 <pre class="prettyprint">
-  <code class="devsite-terminal">docker run -it --rm --name ml-researcher -v PATH-TO/ml-researcher/data/1_FloorPriceOprimisation:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow</code>
+  <code class="devsite-terminal">docker run -it --rm --name ml-researcher -v "PATH-TO/ml-researcher/data/1_FloorPriceOprimisation:/notebooks" -p 8888:8888 -p 6006:6006 tensorflow/tensorflow:1.12.0</code>
 </pre>
-Run TensorBoard for visualisations:
+Run TensorBoard for visualisations of the training:
 <pre class="prettyprint">
   <code class="devsite-terminal">docker exec -it ml-researcher tensorboard --logdir /notebooks/data/1_FloorPriceOprimisation/tmp/[REPLACE WITH DSP ID]/logs</code>
 </pre>
