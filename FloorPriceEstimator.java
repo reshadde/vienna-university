@@ -10,8 +10,48 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
 
-// We are binding an instance of this class as a Singleton using Guice injection 
-// bind(FloorPriceEstimator.class).in(Singleton.class);
+/**
+Author: Reshad Dernjani
+
+Description:
+    This class is used to load the model from resources and run predictions on it.
+    Raw features are used as input and than transformed withing this class.
+
+Usage:
+    Internally we are binding an instance of this class as a singleton using guice injection 
+    Example: "bind(FloorPriceEstimator.class).in(Singleton.class);"
+
+MAVEN dependencies:
+        <!-- TensorFlow -->
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>tensorflow</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.tensorflow/proto -->
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>proto</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+        <!-- TensorFlow GPU support -->
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>libtensorflow</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>libtensorflow_jni_gpu</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+*/
 public class FloorPriceEstimator {
 
     private static final String MODEL_PATH = "/src/main/resources/model/1546946605";
