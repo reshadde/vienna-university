@@ -38,15 +38,13 @@ This guideline is intended to remind you of the necessities for going live with 
 
 ## Projects
 
-### 1. New floor price optimisation algorithm based on neural networks
-
-We use a decision tree algorithm for this problem, but since the performance has been decreasing we started this research project in the scope of my bachelor thesis
+### 1. Bachelor Thesis: Can an artificial neural network outperform a decision tree implementation at bid price predictions for programmetic advertisment?
 
 #### How to run
 
 Run TensorFlow with Jupyter on Docker:
 <pre class="prettyprint">
-  <code class="devsite-terminal">docker run -it --rm --name ml-researcher -v PATH/TO/Mobfox-Stack/projects/ml-researcher/data/1_FloorPriceOprimisation:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow</code>
+  <code class="devsite-terminal">docker run -it --rm --name ml-researcher -v PATH-TO/ml-researcher/data/1_FloorPriceOprimisation:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow</code>
 </pre>
 Run TensorBoard for visualisations:
 <pre class="prettyprint">
@@ -59,7 +57,3 @@ Run following notebooks in the order provided:
 3. "Model Analysis.ipynb"
 
 Author: Reshad Dernjani
-
-### 2. Render rate optimisation
-
-Future work!
