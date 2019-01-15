@@ -48,7 +48,7 @@ Run TensorFlow with Jupyter on Docker by replacing "PATH-TO" and running the fol
 </pre>
 Run TensorBoard for visualisations of the training:
 <pre class="prettyprint">
-  <code class="devsite-terminal">docker exec -it ml-researcher tensorboard --logdir /notebooks/data/1_FloorPriceOprimisation/tmp/[REPLACE WITH DSP ID]/logs</code>
+  <code class="devsite-terminal">docker exec -it ml-researcher tensorboard --logdir /notebooks/data/1_FloorPriceOprimisation/tmp/[REPLACE WITH DSP ID: 47 or 47_warmstarting]/logs</code>
 </pre>
 
 Run following notebooks in the order provided:
